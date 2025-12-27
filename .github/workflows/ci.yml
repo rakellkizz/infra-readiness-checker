@@ -45,5 +45,7 @@ jobs:
       # Run test suite
       # --------------------------------------------------------------
       - name: Run tests
+        env:
+          PYTHONPATH: .
         run: |
           pytest -v
